@@ -1,16 +1,24 @@
-﻿多单词命名方法：
+多单词命名方法(不要超过三个单词)：
     1.按中文翻译顺连,连接首字母大小
-        如：命名一个时间戳的变量  timeStamp
-            命名一个逻辑回归对象  LogRegr
+        如：一个时间戳的变量  timeStamp
+            一个逻辑回归对象  LogRegr
+            决策树模型对象  decisionTreeModel
+            处理后的数据变量  afterCleanData
     2.本质意思写在前面,用下划线分割各单词
-        如：命名一个时间戳的变量  stamp_time
+        如：一个时间戳的变量  stamp_time
+            处理后的数据变量  data_after_clean
 命名规范
+    文件：不要与系统、第三方的文件名重合,可以在后面加_,比如threading_.py
     类：首字母大写,且用1命名方法
         如：线性回归模型类  LinearRegression
     函数：尽量用1命名方法
         如：截图的函数  getScreen
-    变量：1、2按习惯用
-    常量：全大写,尽量用一个单词表示
+    变量\对象：1、2按习惯用
+    常量：全大写,单词之间用_分隔
         如：圆周率常量  PI
             帧率常量  FPS
-    暂时变量：temp,多个暂时变量,temp、temp_1、temp_2、....
+    暂时变量：temp_,多个暂时变量,temp_1、temp_2、....或者后面简单加上含义：temp_content
+    计数变量：nCount
+    与系统冲突变量：后加一个下划线
+        如：编号    id  id_
+	    文件夹  dir  dir_
